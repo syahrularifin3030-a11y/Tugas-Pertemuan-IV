@@ -1,0 +1,81 @@
+/* profil.css - Tugas Pertemuan IV: Halaman Profil Diri */
+
+/* Selector universal: lebar kotak sudah termasuk padding dan border */
+* {
+    box-sizing: border-box;
+}
+
+/* Selector elemen: pengaturan dasar halaman */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #334155;              /* warna HEX */
+    background-color: aliceblue; /* warna nama */
+}
+
+/* Selector ID: kotak utama, lebar tetap dan di tengah halaman */
+#profil {
+    width: 400px;
+    margin: 40px auto;
+    padding: 24px;
+    background-color: white;
+    border: 2px solid rgb(37, 99, 235);  /* warna RGB */
+    border-radius: 12px;
+}
+
+/* Selector grup: h1 dan h2 memakai warna dan perataan yang sama */
+h1, h2 {
+    color: #1e3a8a;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+/* Selector class: teks di bawah nama */
+.jurusan {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.deskripsi {
+    font-size: 15px;
+}
+
+/* Daftar keahlian: selector turunan (li di dalam .daftar-keahlian) */
+.daftar-keahlian {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.daftar-keahlian li {
+    display: inline-block;     /* inline-block pertama: label keahlian */
+    margin: 4px;
+    padding: 4px 12px;
+    background-color: rgba(37, 99, 235, 0.15);  /* warna RGBA */
+    color: #1e3a8a;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.area-tombol {
+    text-align: center;
+}
+
+.tombol {
+    display: inline-block;     /* inline-block kedua: tombol */
+    margin-top: 12px;
+    padding: 10px 20px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
